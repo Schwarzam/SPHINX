@@ -50,7 +50,7 @@ FEH_train.get_input_stats(inputs='colors')
 
 ### Initialize network
 
-FEH_NET = network_array.Network_Array(TEFF_train, target_variable = "FEH",
+FEH_NET = network_array.Network_Array(FEH_train, target_variable = "FEH",
                                         interp_frame = None,
                                         scale_frame  = None,
                                         params       = params,
@@ -72,5 +72,5 @@ FEH_NET.eval_performance()
 FEH_NET.write_network_performance()
 FEH_NET.skim_networks(select=params['skim'])
 FEH_NET.write_training_results()
-#FEH_NET.training_plots()
-FEH_NET.save_state("FEH_NET_5500_7000_apo")
+FEH_NET.training_plots()
+FEH_NET.save_state("FEH_NET_5500_7000")

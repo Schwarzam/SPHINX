@@ -503,6 +503,8 @@ class Dataset():
             columns = ["NET_" + self.variable, "NET_"+ self.variable + "_ERR", "NET_ARRAY_" + self.variable + "_FLAG",'SPHINX_ID'] + self.colors
             #columns = columns + ["NET_" + str(i) + "_" + self.variable for i in range(array_size)]
             #columns = columns + ["NET_" + str(i) + "_" + self.variable + "_FLAG" for i in range(array_size)]
+            
+            print(list(self.master))
             self.custom = pd.merge(self.master,self.custom[columns], on="SPHINX_ID")
 
         elif vars != None:
@@ -529,11 +531,25 @@ class Dataset():
 ################################################################################
 ### Here's a crucial dataset function for final estimates
 
-def merge_datasets(COOL, HOT, TCRIT = [5500, 5750], ID_TAG = "SPH_IND"):
+def merge_datasets(COOL, HOT, TCRIT = [5500, 5750], ID_TAG = "SPHINX_ID"):
     print("... merging datasets")
     print("\t presizes:  LEFT:  ", len(COOL), "  RIGHT:    ", len(HOT))
     print("\t Teff boundary for join:  ", TCRIT)
 
+    # print(list(COOL.columns))
+    # for col in COOL.columns:
+    #     if '_x' in col:
+    #         COOL = COOL.rename(columns = {col: col.replace('_x', '').replace('_y', '')})
+    #     if '_y' in col:
+    #         del COOL[col]
+
+    # for col in HOT.columns:
+    #     if '_x' in col:
+    #         HOT = HOT.rename(columns = {col: col.replace('_x', '').replace('_y', '')})
+    #     if '_y' in col:
+    #         del HOT[col]
+
+    # print(COOL['NET_TEFF'])
     ## Tries to merge the FEH/AC estimate in the transition region
     LEFT = COOL[COOL['NET_TEFF'] < TCRIT[0]].copy()
     RIGHT = HOT[HOT['NET_TEFF'] > TCRIT[1]].copy()

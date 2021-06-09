@@ -25,13 +25,13 @@
 "scale_frame": "self",
 "band_type": "native",
 'input_number': 6,
-'array_size': 750,
+'array_size': 200,
 'hidden_layers': (10, 10),
 'skim' : 8,
 "train_iterations": 2,
 "solver": "adam",
 
-"SPHINX_path"    : "~/Google Drive/SPHINX/",
+"SPHINX_path"    : "../",
 "training_path"  : "datasets/full_catalog_202002.csv.gz",
 'segue_path'     : 'datasets/full_catalog_202002.csv.gz',
 

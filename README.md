@@ -13,6 +13,7 @@ This script package contains the ``network_array``, and ``network`` and ``Datase
 SPHINX optimizes an array of networks for estimates of stellar surface temperature and metallicity from photometry of the Javalambre Photometric Local Universe Survey[1].
 
 
+
 [1] http://j-plus.es/
 
 ![SPHINX Design](https://github.com/DevinWhitten/SPHINX/blob/master/images/SPHINX_Design_2.png)

@@ -24,8 +24,8 @@ io_functions.intro()
 ################################################################################
 
 params = eval(open("../params/param_SPLUS82.py", 'r').read())
-
 print("Target set:  ", params['target_path'])
+
 
 target = dataset.Dataset(path = params['target_path'],
                          variable=None,

@@ -21,6 +21,14 @@
 "mag_faint_lim" : 19,
 "mag_bright_lim" : 14,
 
+'TEFF_NET'       : 'TEFF_NET',
+
+'FEH_NET_COOL'   : 'FEH_NET_4200_5700',
+'FEH_NET_WARM'    : 'FEH_NET_5500_7000',
+
+'AC_NET_COOL'   : 'AC_NET_4200_5700',
+'AC_NET_WARM'    : 'AC_NET_5500_7000',
+
 "EBV_MAX": 0.1,
 "scale_frame": "self",
 "band_type": "native",
@@ -31,17 +39,16 @@
 "train_iterations": 2,
 "solver": "adam",
 
-"SPHINX_path"    : "/Users/MasterD/Google Drive/SPHINX/",
-"target_path"    : "datasets/a_-1.00_l_-1.75.csv",
-"training_path"  : "datasets/full_catalog_201911.csv.gz",
-'segue_path'     : 'datasets/full_catalog_201911.csv.gz',
+"SPHINX_path"    : "/home/gustavo/SPHINX",
+"target_path"    : "/../Documents/first1000Updated.csv",
+"training_path"  : "datasets/full_catalog_202002.csv.gz",
+'segue_path'     : 'datasets/full_catalog_202002.csv.gz',
 
+"output_directory": "/output/SPLUS82/",
+"output_filename":"updated1000.csv",
 
-"output_directory": "output/SPLUS82/",
-"output_filename":"a_-1.00_l_-1.75.csv",
-
-'target_bands': ["gSDSS",  'rSDSS',  'iSDSS',  'F395', 'F410', 'F430', 'F515', 'F660', 'F861'],
-"target_sigma": ["gSDSS_err", 'rSDSS_err', 'iSDSS_err', 'F395_err', 'F410_err', 'F430_err', 'F515_err', 'F660_err', 'F861_err'],
+'target_bands': ["g_auto",  'r_auto',  'i_auto',  'F395_auto', 'F410_auto', 'F430_auto', 'F515_auto', 'F660_auto', 'F861_auto'],
+"target_sigma": ["eg_auto", 'er_auto', 'ei_auto', 'eF395_auto', 'eF410_auto', 'eF430_auto', 'eF515_auto', 'eF660_auto', 'eF861_auto'],
 
 "format_bands": ['gSDSS', 'rSDSS', 'iSDSS',  'F395',  'F410',  'F430',  'F515',  'F660',  'F861'],
 

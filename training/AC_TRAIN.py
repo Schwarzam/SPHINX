@@ -67,5 +67,7 @@ AC_NET.eval_performance()
 AC_NET.write_network_performance()
 AC_NET.skim_networks(select=params['skim'])
 AC_NET.write_training_results()
-#AC_NET.training_plots()
-AC_NET.save_state("AC_NET_5500_7000_lower")
+AC_NET.training_plots()
+
+
+AC_NET.save_state("AC_NET_5500_7000")

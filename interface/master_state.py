@@ -5,7 +5,7 @@ import sys
 import copy
 sys.path.append("interface")
 import train_fns, net_functions, io_functions, stat_functions, dataset
-
+import numpy as np
 
 
 
@@ -69,7 +69,7 @@ class Master_State():
         self.AC_NET['COOL'].predict(LEFT_FRAME)
 
 
-
+        print(list(LEFT_FRAME.custom.columns))
         LEFT_FRAME.merge_master(vars = ['TEFF', 'FEH', 'AC'])
         RIGHT_FRAME.merge_master(vars = ['TEFF', 'FEH', 'AC'])
 

@@ -25,16 +25,16 @@
 "scale_frame": "self",
 "band_type": "native",
 'input_number': 6,
-'array_size': 500,
+'array_size': 200,
 'hidden_layers': (8, 8),
 'skim' : 5,
 "train_iterations": 2,
 "solver": "adam",
 
-"SPHINX_path"    : "/emc3/SPHINX/",
-"target_path"    : "datasets/a_-1.00_l_-1.75.csv",
-"training_path"  : "datasets/full_catalog_201911.csv.gz",
-'segue_path'     : 'datasets/full_catalog_201911.csv.gz',
+"SPHINX_path"    : "../",
+"target_path"    : "",
+"training_path"  : "datasets/full_catalog_202002.csv.gz",
+'segue_path'     : 'datasets/full_catalog_202002.csv.gz',
 
 
 "output_directory": "output/SPLUS82/",

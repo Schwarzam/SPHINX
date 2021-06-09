@@ -1,13 +1,12 @@
 #########################################################################
 {
-"TEFF_MIN" : 5000,
-"TEFF_MAX" : 6500,
+"TEFF_MIN" : 5500,
+"TEFF_MAX" : 7000,
 "T_ERR_MAX" : 120.,
 
 "FEH_MAX" : -0.5,
 "FEH_MIN" : -3.2,
 "FEH_ERR_MAX": 0.20,
-
 
 "CFE_MIN" : -1.0,
 "CFE_MAX" : 3.0,
@@ -31,17 +30,17 @@
 "train_iterations": 2,
 "solver": "adam",
 
-"SPHINX_path"    : "/Users/MasterD/Google Drive/SPHINX/",
-"target_path"    : "datasets/a_-1.00_l_-1.75.csv",
-"training_path"  : "datasets/full_catalog_201911.csv.gz",
-'segue_path'     : 'datasets/full_catalog_201911.csv.gz',
+"SPHINX_path"    : "../",
+"target_path"    : "../Documents/SPLUS_STRIPE82_SPHINX_PARAMS_1000.csv",
+"training_path"  : "datasets/full_catalog_202002.csv.gz",
+'segue_path'     : 'datasets/full_catalog_202002.csv.gz',
 
 
 "output_directory": "output/SPLUS82/",
 "output_filename":"a_-1.00_l_-1.75.csv",
 
-'target_bands': ["gSDSS",  'rSDSS',  'iSDSS',  'F395', 'F410', 'F430', 'F515', 'F660', 'F861'],
-"target_sigma": ["gSDSS_err", 'rSDSS_err', 'iSDSS_err', 'F395_err', 'F410_err', 'F430_err', 'F515_err', 'F660_err', 'F861_err'],
+'target_bands': ["g_auto",  'r_auto',  'i_auto',  'F395_auto', 'F410_auto', 'F430_auto', 'F515_auto', 'F660_auto', 'F861_auto'],
+"target_sigma": ["eg_auto", 'er_auto', 'ei_auto', 'eF395_auto', 'eF410_auto', 'eF430_auto', 'eF515_auto', 'eF660_auto', 'eF861_auto'],
 
 "format_bands": ['gSDSS', 'rSDSS', 'iSDSS',  'F395',  'F410',  'F430',  'F515',  'F660',  'F861'],
 

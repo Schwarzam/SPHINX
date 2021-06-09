@@ -8,7 +8,6 @@ import numpy as np
 import pandas as pd
 import pickle as pkl
 import random
-import sklearn.neural_network as sknet
 from matplotlib.backends.backend_pdf import PdfPages
 import multiprocessing
 import matplotlib.pyplot as plt
@@ -474,7 +473,7 @@ class Network_Array():
 
 
         print("\t writing")
-        #pd.DataFrame(network_residual).to_csv("cache/" + filename, index=False)
+        #pd.DataFrame(network_residual).to_csv("cache/" +  'out.csv', index=False)
         file_out = open(self.params['SPHINX_path'] + "cache/"+filename, "wb")
         pkl.dump(network_residual, file_out)
         file_out.close()
@@ -623,6 +622,6 @@ class Network_Array():
 
     def load_state(self, file_name):
         print("... loading:  ", file_name)
-        self = pkl.load(open(self.params['SPHINX_path'] + "net_pkl/" + file_name, 'rb'))
+        self = pkl.load(gzip.open(self.params['SPHINX_path'] + "net_pkl/" + file_name, 'rb'))
 
         return
