@@ -25,7 +25,7 @@
 "scale_frame": "self",
 "band_type": "native",
 'input_number': 6,
-'array_size': 200,
+'array_size': 500,
 'hidden_layers': (8, 8),
 'skim' : 5,
 "train_iterations": 2,

@@ -31,8 +31,6 @@
 "solver": "adam",
 
 "SPHINX_path"    : "../",
-"target_path"    : "../Documents/SPLUS_STRIPE82_SPHINX_PARAMS_1000.csv",
-"training_path"  : "datasets/full_catalog_202002.csv.gz",
 'segue_path'     : 'datasets/full_catalog_202002.csv.gz',
 
 

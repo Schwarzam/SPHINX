@@ -1,7 +1,7 @@
 #########################################################################
 {
-"TEFF_MIN" : 5500,
-"TEFF_MAX" : 7000,
+"TEFF_MIN" : 4200,
+"TEFF_MAX" : 5700,
 "T_ERR_MAX" : 120.,
 
 "FEH_MAX" : 0.0,
@@ -25,7 +25,7 @@
 "scale_frame": "self",
 "band_type": "native",
 'input_number': 6,
-'array_size': 200,
+'array_size': 750,
 'hidden_layers': (10, 10),
 'skim' : 8,
 "train_iterations": 2,

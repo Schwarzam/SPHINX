@@ -70,4 +70,4 @@ AC_NET.write_training_results()
 AC_NET.training_plots()
 
 
-AC_NET.save_state("AC_NET_4200_5700_new")
+AC_NET.save_state("AC_NET_5500_7000")

@@ -40,7 +40,8 @@
 "solver": "adam",
 
 "SPHINX_path"    : "/home/gustavo/SPHINX",
-"target_path"    : "/../Documents/first1000Updated.csv",
+"target_path"    : "/../Documents/SPLUS_STRIPE82_SPHINX_PARAMS.csv",
+
 "training_path"  : "datasets/full_catalog_202002.csv.gz",
 'segue_path'     : 'datasets/full_catalog_202002.csv.gz',
 
